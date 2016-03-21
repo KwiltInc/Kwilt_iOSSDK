@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gdu-5G-aKt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Kwilt PhotoPicker-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lcc-k1-WGw"/>
+                        <viewControllerLayoutGuide type="bottom" id="aQG-fo-hLd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-16-R6K">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Kwilt Photos" id="8s3-HW-Fm1">
+                                        <connections>
+                                            <action selector="showKwiltImagePicker" destination="2" id="V8M-uu-FeV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xq1-yJ-Ycu">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R3p-SP-ed9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="LgI-m3-SPx">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tb4-16-R6K" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="6bY-MU-SOb"/>
+                            <constraint firstItem="tb4-16-R6K" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="9sC-x1-8bx"/>
+                            <constraint firstItem="Xq1-yJ-Ycu" firstAttribute="top" secondItem="lcc-k1-WGw" secondAttribute="bottom" id="9xB-ad-TSG"/>
+                            <constraint firstItem="Xq1-yJ-Ycu" firstAttribute="bottom" secondItem="tb4-16-R6K" secondAttribute="top" id="GUg-At-LEM"/>
+                            <constraint firstItem="Xq1-yJ-Ycu" firstAttribute="trailing" secondItem="tb4-16-R6K" secondAttribute="trailing" id="HfF-ui-kYc"/>
+                            <constraint firstItem="Xq1-yJ-Ycu" firstAttribute="leading" secondItem="tb4-16-R6K" secondAttribute="leading" id="NO4-or-daI"/>
+                            <constraint firstItem="tb4-16-R6K" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="TPT-yD-zOx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kwilt PhotoPicker" id="HHq-CI-LKg"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Xq1-yJ-Ycu" id="V0n-BY-RqZ"/>
+                        <outlet property="toolBar" destination="tb4-16-R6K" id="s0c-xz-aMp"/>
+                        <segue destination="lG4-YR-glI" kind="push" identifier="loadImageView" id="QOG-zZ-quS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589" y="116"/>
+        </scene>
+        <!--Image View-->
+        <scene sceneID="jT7-Fy-eSA">
+            <objects>
+                <viewController id="lG4-YR-glI" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHV-vj-scu"/>
+                        <viewControllerLayoutGuide type="bottom" id="HAd-8U-i4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yXp-qd-8Hl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UUY-Uf-Am8" customClass="GestureImageView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UUY-Uf-Am8" secondAttribute="trailing" id="MxG-Hj-7mA"/>
+                            <constraint firstItem="UUY-Uf-Am8" firstAttribute="top" secondItem="HHV-vj-scu" secondAttribute="bottom" id="aFP-CZ-n4Z"/>
+                            <constraint firstItem="UUY-Uf-Am8" firstAttribute="bottom" secondItem="HAd-8U-i4s" secondAttribute="top" id="ce9-e6-rmn"/>
+                            <constraint firstItem="UUY-Uf-Am8" firstAttribute="leading" secondItem="yXp-qd-8Hl" secondAttribute="leading" id="qdZ-i5-xng"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image View" id="0Bz-pC-7gK">
+                        <barButtonItem key="backBarButtonItem" title="KP" id="wtk-Ed-xe8"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="UUY-Uf-Am8" id="o8h-mB-kSl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zd-I1-2zH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LAc-0J-sbd">
+            <objects>
+                <navigationController id="gdu-5G-aKt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fA8-F4-ghm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="7BT-C3-8Ga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQX-Qr-Ioe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="116"/>
+        </scene>
+    </scenes>
+</document>

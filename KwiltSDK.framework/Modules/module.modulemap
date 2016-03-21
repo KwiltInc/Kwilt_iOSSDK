@@ -1,0 +1,6 @@
+framework module KwiltSDK {
+  umbrella header "KwiltSDK.h"
+
+  export *
+  module * { export * }
+}
