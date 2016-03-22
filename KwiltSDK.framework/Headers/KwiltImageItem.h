@@ -1,6 +1,6 @@
 //
 //  KwiltImageItem.h
-//  Kwilt SDK
+//  KwiltSDK
 //
 //  Copyright © 2014-2016 Kwilt Inc. All rights reserved.
 //
@@ -12,18 +12,16 @@
 
 @interface KwiltImageItem : NSObject
 
-//If store the id of the kwilt item (for local localidentifier from iOS)
+//A unique identifier for the kwilt image item
 @property(nonatomic, assign) NSString *kwiltItemID;
 
-//If YES the image is stored locally
+//Determines if the kwilt image item refers to an image stored on the local device
 @property(nonatomic, assign) BOOL isStoredLocal;
 
-//This will hold a low quality thumbnail image
+//Points to a thumbnail of the image
 @property(nonatomic, retain) UIImage *thumbnail;
 
-//this will hold the information of the images
-//source - hold the source url of the remote image, when isStoredLocal = NO
-//       - hold the PHAsset for the local image, when isStoredLocal = YES
+//A list of key-value pair dictionary providing more information about the image
 @property(nonatomic, retain) NSDictionary *imageInfo;
 
 /*

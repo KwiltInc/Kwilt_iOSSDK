@@ -1,6 +1,6 @@
 //
 //  KwiltHelper.h
-//  Kwilt SDK
+//  KwiltSDK
 //
 //  Copyright © 2014-2016 Kwilt Inc. All rights reserved.
 //
@@ -11,8 +11,8 @@
 @interface KwiltHelper : NSObject
 
 /*
- * kwiltImageItem - Hold a reference to the item selected by the user
- * Return the image pointed by the kwiltImageItem
+ * kwiltImageItem - Accepts a pointer to a Kwilt Image Item
+ * Returns the full resolution UIImage of the image referred to by the kwiltImageItem
  */
 + (UIImage *)getKwiltImage:(KwiltImageItem *)kwiltImageItem;
 

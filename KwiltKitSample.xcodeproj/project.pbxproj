@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7C8FF21CA1BCC100001906 /* GestureImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C8FEF1CA1BCC100001906 /* GestureImageView.m */; };
+		3E7C8FF31CA1BCC100001906 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C8FF11CA1BCC100001906 /* ImageViewController.m */; };
 		42D1AE1A1BB98BCC004EC801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1AE191BB98BCC004EC801 /* main.m */; };
 		42D1AE1D1BB98BCC004EC801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1AE1C1BB98BCC004EC801 /* AppDelegate.m */; };
 		42D1AE201BB98BCC004EC801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1AE1F1BB98BCC004EC801 /* ViewController.m */; };
@@ -15,8 +17,8 @@
 		42EEBC9D1BBC6D400027432E /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EEBC9C1BBC6D400027432E /* Launch Screen.xib */; };
 		E4F11CED1C934CF500189280 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F11CEB1C934CF500189280 /* ImageCell.m */; };
 		E4F11CEE1C934CF500189280 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F11CEC1C934CF500189280 /* ImageCell.xib */; };
-		E4FA6D641C9C5AEB007B06C1 /* KwiltSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FA6D631C9C5AEB007B06C1 /* KwiltSDK.framework */; };
-		E4FA6D661C9C5B00007B06C1 /* KwiltSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4FA6D631C9C5AEB007B06C1 /* KwiltSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4FA6D7A1CA1A7BD007B06C1 /* KwiltSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FA6D781CA1A7AB007B06C1 /* KwiltSDK.framework */; };
+		E4FA6D7B1CA1A7BD007B06C1 /* KwiltSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4FA6D781CA1A7AB007B06C1 /* KwiltSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4FA6D661C9C5B00007B06C1 /* KwiltSDK.framework in Embed Frameworks */,
+				E4FA6D7B1CA1A7BD007B06C1 /* KwiltSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +36,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E7C8FEE1CA1BCC100001906 /* GestureImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureImageView.h; sourceTree = "<group>"; };
+		3E7C8FEF1CA1BCC100001906 /* GestureImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureImageView.m; sourceTree = "<group>"; };
+		3E7C8FF01CA1BCC100001906 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		3E7C8FF11CA1BCC100001906 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		42D1AE151BB98BCC004EC801 /* KwiltKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KwiltKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1AE191BB98BCC004EC801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42D1AE1B1BB98BCC004EC801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,7 +53,7 @@
 		E4F11CEA1C934CF500189280 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		E4F11CEB1C934CF500189280 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		E4F11CEC1C934CF500189280 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
-		E4FA6D631C9C5AEB007B06C1 /* KwiltSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KwiltSDK.framework; sourceTree = "<group>"; };
+		E4FA6D781CA1A7AB007B06C1 /* KwiltSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KwiltSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4FA6D641C9C5AEB007B06C1 /* KwiltSDK.framework in Frameworks */,
+				E4FA6D7A1CA1A7BD007B06C1 /* KwiltSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +73,7 @@
 			children = (
 				42D1AE171BB98BCC004EC801 /* KwiltKitSample */,
 				42D1AE161BB98BCC004EC801 /* Products */,
-				E4FA6D631C9C5AEB007B06C1 /* KwiltSDK.framework */,
+				E4FA6D781CA1A7AB007B06C1 /* KwiltSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +88,10 @@
 		42D1AE171BB98BCC004EC801 /* KwiltKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				3E7C8FEE1CA1BCC100001906 /* GestureImageView.h */,
+				3E7C8FEF1CA1BCC100001906 /* GestureImageView.m */,
+				3E7C8FF01CA1BCC100001906 /* ImageViewController.h */,
+				3E7C8FF11CA1BCC100001906 /* ImageViewController.m */,
 				E4F11CEA1C934CF500189280 /* ImageCell.h */,
 				E4F11CEB1C934CF500189280 /* ImageCell.m */,
 				E4F11CEC1C934CF500189280 /* ImageCell.xib */,
@@ -179,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7C8FF31CA1BCC100001906 /* ImageViewController.m in Sources */,
 				42D1AE201BB98BCC004EC801 /* ViewController.m in Sources */,
 				E4F11CED1C934CF500189280 /* ImageCell.m in Sources */,
+				3E7C8FF21CA1BCC100001906 /* GestureImageView.m in Sources */,
 				42D1AE1D1BB98BCC004EC801 /* AppDelegate.m in Sources */,
 				42D1AE1A1BB98BCC004EC801 /* main.m in Sources */,
 			);

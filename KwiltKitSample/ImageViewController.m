@@ -6,7 +6,7 @@
 //
 
 #import "ImageViewController.h"
-#import "KwiltHelper.h"
+#import "KwiltSDK/KwiltHelper.h"
 
 @interface ImageViewController ()
 
