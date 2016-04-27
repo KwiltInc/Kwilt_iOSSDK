@@ -10,7 +10,7 @@
 #import "KwiltImageItem.h"
 #import "KwiltImagePickerController.h"
 
-#define KWILTSDK_VERSION_STRING "0.9 Beta"
+#define KWILTSDK_VERSION_STRING "0.9.2 Beta"
 
 #import <kwiltsdk/KwiltImagePickerController.h>
 
